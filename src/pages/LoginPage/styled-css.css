@@ -1,0 +1,87 @@
+input {
+    outline: none;
+    border: none;
+    display: block;
+    padding-top: 4px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+    backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0);
+}
+label{
+    font-size: 12pt;
+    line-height: 16px;
+    color: #fff;
+}
+.login-button{
+    
+    border: none;
+    float: right;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: medium;
+    color: #B22E6F;
+    background: #fff;
+    border-radius: 44px;
+    width: 75px;
+    height: 34px;
+    top: 40px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.label-float{
+    position: relative;
+    padding: 8px 16px 8px 16px;
+    width: 280px;
+    height: fit-content;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.32);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .label-float input{
+    border: 0;
+    outline: none;
+    min-width: 180px;
+    height: 30px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+    border-radius:0;
+  }
+  
+  .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    margin-top: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+
+  .label-float input:required:invalid + label:before{
+    content: '*';
+  }
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #fff;
+    opacity: 50%;
+  }
